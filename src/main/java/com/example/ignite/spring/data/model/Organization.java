@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.example.ignite.spring.data;
+package com.example.ignite.spring.data.model;
 
 import java.sql.Timestamp;
 import java.util.concurrent.atomic.AtomicLong;

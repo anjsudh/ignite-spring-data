@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.example.ignite.spring.data;
+package com.example.ignite.spring.data.model;
 
 import org.apache.ignite.binary.BinaryObjectException;
 import org.apache.ignite.binary.Binarylizable;

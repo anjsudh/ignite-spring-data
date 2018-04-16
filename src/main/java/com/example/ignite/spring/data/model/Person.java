@@ -1,5 +1,5 @@
 
-package com.example.ignite.spring.data;
+package com.example.ignite.spring.data.model;
 
 import java.io.Serializable;
 import java.util.concurrent.atomic.AtomicLong;

@@ -1,6 +1,7 @@
 
-package com.example.ignite.spring.data;
+package com.example.ignite.spring.data.config;
 
+import com.example.ignite.spring.data.model.Person;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.configuration.CacheConfiguration;

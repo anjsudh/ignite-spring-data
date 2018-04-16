@@ -1,5 +1,6 @@
 package com.example.ignite.spring.data;
 
+import com.example.ignite.spring.data.model.Person;
 import org.apache.ignite.springdata.repository.IgniteRepository;
 import org.apache.ignite.springdata.repository.config.Query;
 import org.apache.ignite.springdata.repository.config.RepositoryConfig;
