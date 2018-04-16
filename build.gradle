@@ -1,0 +1,43 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-web')
+	runtime('org.springframework.boot:spring-boot-devtools')
+	runtime('com.microsoft.sqlserver:mssql-jdbc')
+	runtime('com.microsoft.sqlserver:mssql-jdbc')
+	compile group: 'org.apache.ignite', name: 'ignite-core', version: '2.4.0'
+	compile group: 'org.apache.ignite', name: 'ignite-spring', version: '2.4.0'
+	compile group: 'org.apache.ignite', name: 'ignite-indexing', version: '2.4.0'
+	compile group: 'org.apache.ignite', name: 'ignite-spring-data', version: '2.4.0'
+	compile group: 'org.springframework.data', name: 'spring-data-commons', version: '1.13.1.RELEASE'
+	compile group: 'com.h2database', name: 'h2', version: '1.4.195'
+	compile group: 'org.apache.lucene', name: 'lucene-core', version: '5.5.2'
+
+
+	compileOnly('org.projectlombok:lombok')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
